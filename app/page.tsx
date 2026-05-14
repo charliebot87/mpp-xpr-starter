@@ -18,10 +18,16 @@ export default function Home() {
           requestAccount: 'mpp-starter',
           requestStatus: true,
         },
-        chainId: '384da888112027f0321850a169f737c33e53b388aad48b5adace4bab97f437e0',
-        endpoints: ['https://api.protonnz.com'],
-        appName: 'MPP XPR Starter',
-        appLogo: 'https://xprnetwork.org/logo.png',
+        linkOptions: {
+          chainId: '384da888112027f0321850a169f737c33e53b388aad48b5adace4bab97f437e0',
+          endpoints: ['https://api.protonnz.com'],
+        },
+        uiOptions: {
+          appInfo: {
+            name: 'MPP XPR Starter',
+            logo: 'https://xprnetwork.org/logo.png',
+          },
+        },
       })
       setSession(result.session)
     } catch (err: any) {
